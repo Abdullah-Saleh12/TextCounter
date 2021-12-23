@@ -44,5 +44,6 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this, formattedResult, Toast.LENGTH_LONG).show();
         }
+        this.tvResult.setText(String.valueOf(TextCounter.getCharsCount(this.edTextInput.getText().toString())));
     }
 }
